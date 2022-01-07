@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _randomNumber = 0;
-  final List _quote = [
+  final List _quotes = [
     "Whatever is good for your soul, do that.",
     "Life is better when you're laughing.",
     "Dream without fear, love without limits.",
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Press the button to generate a sentence',
             ),
             Text(
-              _quote[_randomNumber],
+              _quotes[_randomNumber],
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
