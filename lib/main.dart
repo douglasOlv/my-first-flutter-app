@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _randomNumber = 0;
-  List _quote = [
+  final List _quote = [
     "Whatever is good for your soul, do that.",
     "Life is better when you're laughing.",
     "Dream without fear, love without limits.",
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   ];
   void _generateNumber() {
     setState(() {
-      _randomNumber = new Random().nextInt(4);
+      _randomNumber = Random().nextInt(4);
     });
   }
 
